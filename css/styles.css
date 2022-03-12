@@ -141,10 +141,10 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-links .link::after {
+.nav-links .current::after {
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -1px;
 
   content: "";
   display: block;
@@ -168,6 +168,12 @@ ul {
   align-items: center;
 }
 
+.header-contacts .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-contacts .item:nth-child(2) {
   margin-left: 50px;
 }
@@ -189,11 +195,6 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts .item {
-  display: flex;
-  align-items: center;
-}
-
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-text-color);
@@ -201,7 +202,7 @@ ul {
 
 .header-contacts .link:hover .header-contacts-icon,
 .header-contacts .link:focus .header-contacts-icon {
-  fill: var(--accent-text-color);
+  fill: currentColor;
 }
 
 /* БОДІ */
@@ -222,6 +223,7 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hero .container {
@@ -452,18 +454,17 @@ ul {
 }
 
 .padding-30 {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 32px;
+}
+
+.padding-30 .text {
+  margin-bottom: 16px;
 }
 
 .social-media-list {
   display: flex;
-  /* max-width: 206px; */
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
+  align-items: center;
   justify-content: space-between;
-  /* background-color: #2196f3; */
 }
 
 .social-media-link {
@@ -560,12 +561,11 @@ ul {
 
 .footer-block {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-block-1 {
-  /* margin-right: 70px; */
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -578,11 +578,17 @@ ul {
   margin-bottom: 9px;
 }
 
-.footer-adress .link {
+.adress-list .link {
   line-height: 1.71;
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+  color: var(--accent-text-color);
 }
 
 .opacity-60 {
@@ -633,44 +639,6 @@ ul {
   fill: #ffffff;
 }
 
-.footer-email .title {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.footer-email input {
-  background-color: var(--background-color-number-two);
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: #ffffff;
-}
-
-.email-submit-button {
-  height: 50px;
-  width: 200px;
-  padding: 10px 29px;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  /* text-align: left; */
-  background-color: var(--accent-text-color);
-}
-
-.email-submit-button {
-}
-
 /* ПОРТФОЛІО */
 
 /* Селектор */
@@ -714,6 +682,11 @@ ul {
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.selector-list .all {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
 }
 
 .work-sectors {
@@ -761,7 +734,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   height: 100%;
   width: 100%;
@@ -776,7 +749,8 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-sectors .item:hover .overflow {
+.work-sectors .link:hover .overflow,
+.work-sectors .link:focus .overflow {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -788,8 +762,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   /* background-color: brown; */
-  margin-bottom: 4px;
-  margin-left: 24px;
+  /* margin-bottom: 4px; */
 }
 
 .work-sectors .text {
@@ -797,10 +770,8 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-left: 24px;
 }
 
 .padding-20 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
