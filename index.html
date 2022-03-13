@@ -22,173 +22,373 @@
 <body>
     <!--Хедер-->
 
-    <header class="header site-header">
+    <header class="site-header">
 
         <div class="container main-nav">
             <nav class="navigation">
                 <a class="logo" href="./index.html">
                     <span class="web">Web</span><span class="studio-black">Studio</span></a>
                 <ul class="nav-links">
-                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="nav-link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                    <li class="item"><a href="" class="nav-link">Контакты</a></li>
                 </ul>
             </nav>
+
 
             <ul class="header-contacts">
                 <li class="item">
 
+
                     <a href="mailto:info@devstudio.com" class="link"><svg class="header-contacts-icon" width="16px"
                             height="12px">
                             <use href="./images/symbol-defs.svg#icon-mail"></use>
-                        </svg>info@devstudio.com</a>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
                 <li class="item">
-                    <svg class="header-contacts-icon" width="10px" height="16px">
-                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg><a href="tel:+380961111111" class="link">+38 096 111 11 11
+
+
+                    <a href="tel:+380961111111" class="link"><svg class="header-contacts-icon" width="10px"
+                            height="16px">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
                     </a>
                 </li>
             </ul>
         </div>
 
     </header>
+
     <!--Средняя часть документа-->
 
     <main>
-        <section class="section portfolio">
+
+        <!--Секция "Заказать услугу"-->
+
+        <section class="section hero">
             <div class="container">
-                <ul class="selector-list">
-                    <li class="item"> <button type="button" class="button all">Все</button> </li>
-                    <li class="item"> <button type="button" class="button">Веб-сайты</button> </li>
-                    <li class="item"> <button type="button" class="button">Приложения</button> </li>
-                    <li class="item"> <button type="button" class="button">Дизайн</button> </li>
-                    <li class="item"> <button type="button" class="button">Маркетинг</button> </li>
+                <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
+                <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
+            </div>
+        </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-close" data-modal-close>
+                    <svg class="close-button" width="11" height="11">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Секция "Бенефиты" -->
+
+        <section class="section benefits">
+            <div class="container">
+                <ul class="list">
+                    <li class="item">
+                        <div class="benefits-icon-area">
+                            <svg class="benefits-icon">
+                                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Внимание к деталям</h3>
+                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <div class="benefits-icon-area">
+                            <svg class="benefits-icon">
+                                <use href="./images/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Пунктуальность</h3>
+                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                            собой.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <div class="benefits-icon-area">
+                            <svg class="benefits-icon">
+                                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Планирование</h3>
+                        <p class="text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <div class="benefits-icon-area">
+                            <svg class="benefits-icon">
+                                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Современные технологии</h3>
+                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!--Секция "Чем мы занимаемся"-->
+        <section class="section images-samples">
+            <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="list">
+                    <li class="item">
+                        <div class="thumb">
+                            <img class="image" src="./images/index/img.jpg" alt="Картинка" width="370">
+                            <div class="text">Десктопные приложения</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumb"><img class="image" src="./images/index/img-1.jpg" alt="Еще одна картинка"
+                                width="370">
+                            <div class="text">Мобильные приложения</div>
+
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumb">
+                            <img class="image" src="./images/index/img-2.jpg" alt="Еще одна и еще одна картинка"
+                                width="370">
+                            <div class="text">Дизайнерские решения</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Секция "Команда молодости нашей"-->
+        <section class="section our-team">
+            <div class="container">
+                <h2 class="section-header-team">Наша команда</h2>
+                <ul class="list">
+                    <li class="item"><img class="image" src="./images/index/member-1.jpg" alt="Член команды №1"
+                            width="270">
+                        <div class="padding-30">
+                            <h3 class="header">Игорь Демьяненко</h3>
+                            <p class="text">Product Designer</p>
+
+                            <ul class="social-media-list">
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img class="image" src="./images/index/member-2.jpg" alt="Член команды №2" width="270">
+                        <div class="padding-30">
+                            <h3 class="header">Ольга Репина</h3>
+                            <p class="text">Frontend Developer</p>
+
+                            <ul class="social-media-list">
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img class="image" src="./images/index/member-3.jpg" alt="Член команды №3" width="270">
+                        <div class="padding-30">
+                            <h3 class="header">Николай Тарасов</h3>
+                            <p class="text">Marketing</p>
+
+                            <ul class="social-media-list">
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="item">
+                        <img class="image" src="./images/index/member-4.jpg" alt="Член команды №4" width="270">
+                        <div class="padding-30">
+                            <h3 class="header">Михаил Ермаков</h3>
+                            <p class="text">UI Designer</p>
+
+                            <ul class="social-media-list">
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media-item">
+                                    <a href="" class="social-media-link">
+                                        <svg class="social-media-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section partners">
+            <div class="container">
+                <h2 class="permanent-partners-list-header">Постоянные клиенты</h2>
+
+                <ul class="permanent-partners-list">
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="permanent-partners-item">
+                        <a href="" class="permanent-partners-link">
+                            <svg class="permanent-partners-icon" height="60px" width="106px">
+                                <use href="./images/symbol-defs.svg#icon-logo-6"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
 
-                <ul class="work-sectors">
 
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img.jpg"
-                                    alt="Технокряк">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Технокряк</h3>
-                                <p class="text">Веб-сайт</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-1.jpg"
-                                    alt="Постер">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                                <p class="text">Дизайн</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-2.jpg"
-                                    alt="Приложение ресторана">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Ресторан Seafood</h3>
-                                <p class="text">Приложение</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-3.jpg"
-                                    alt="Маркетинговый проект">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Проект Prime</h3>
-                                <p class="text">Маркетинг</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-4.jpg"
-                                    alt="Приложение Боксес">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Проект Boxes</h3>
-                                <p class="text">Приложение</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-5.jpg"
-                                    alt="Вэб сайт Вдохновение">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Inspiration has no Borders</h3>
-                                <p class="text">Веб-сайт</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-6.jpg"
-                                    alt="Дизайн издания">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Издание Limited Edition</h3>
-                                <p class="text">Дизайн</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-7.jpg"
-                                    alt="Маркетинг проект">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Проект LAB</h3>
-                                <p class="text">Маркетинг</p>
-                            </div>
-                        </a> </li>
-                    <li class="item"> <a class="link" href="">
-                            <div class="image-thumb"> <img class="image" src="./images/portfolio/img-8.jpg"
-                                    alt="Приложение для роста бизнеса">
-                                <div class="overflow">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
-                                    о компании или частном лице.</div>
-                            </div>
-                            <div class="padding-20">
-                                <h3 class="title">Growing Business</h3>
-                                <p class="text">Приложение</p>
-                            </div>
-                        </a> </li>
 
-                </ul>
+
+
+
             </div>
 
 
 
         </section>
-
-
-
-
-
-
 
     </main>
 
@@ -260,7 +460,7 @@
 
 
     </footer>
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
