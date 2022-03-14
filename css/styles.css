@@ -455,6 +455,12 @@ ul {
   border: 2px solid var(--accent-text-color);
 }
 
+.contract-link:visited,
+.contract-link:active,
+.contract-link:link {
+  color: var(--accent-text-color);
+}
+
 .submit-bottom {
   display: block;
   width: 200px;
