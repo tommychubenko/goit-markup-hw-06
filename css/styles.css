@@ -99,7 +99,6 @@ ul {
 
 .logo:hover,
 .logo:focus {
-  outline-width: 0;
 }
 
 .studio-black {
@@ -148,7 +147,7 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-color);
-  outline-width: 0;
+  /* outline-width: 0; */
 }
 
 .current {
@@ -214,7 +213,7 @@ ul {
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-text-color);
-  outline-width: 0;
+  /* outline-width: 0; */
 }
 
 .header-contacts .link:hover .header-contacts-icon,
