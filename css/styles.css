@@ -744,8 +744,6 @@ ul {
 .footer-block {
   display: flex;
   align-items: baseline;
-  justify-content: center;
-  /* justify-content: space-between; */
 }
 
 .footer-block__1 {
@@ -781,8 +779,7 @@ ul {
 }
 
 .social-media__block--footer {
-  /* display: inline-block; */
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .social-media__title--footer {
